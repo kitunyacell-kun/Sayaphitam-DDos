@@ -34,8 +34,8 @@ print(f"\033[97m║ \033[100m{' ' * 4}https://www.https//kunkaffa@gmail.com{' ' 
 print(f"\033[97m╚{'═' * 80}╝")
 while attemps < 100:
     print("\033[38;5;6mm┏━━KunFayz━━⬣")
-    username = input("\033[38;5;6m┗> Enter your username: \033[32m")
-    password = input("\033[38;5;6m┗> Enter your password: \033[32m")
+    username = input("\033[96m┗> Enter Username: \033[30m")
+    password = input("\033[96m┗> Enter password: \033[30m")
 
     if username == 'pekat' and password == 'malam':
         print("\033[100m \033[31m••> BURNING WEBS 210πiS \033[0m")
